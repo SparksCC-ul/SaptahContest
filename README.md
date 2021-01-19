@@ -5,5 +5,6 @@ Steps to Solve the questions in Github
 * The question will be in the form of an md file  
 * read and analyse the question  
 * use your own code editor to solve the question  
-* upload the solution in this repository  
+* create a new file
+* add the solution in this repository  
 
