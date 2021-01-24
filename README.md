@@ -6,5 +6,7 @@ Steps to Solve the questions in Github
 * read and analyse the question  
 * use your own code editor to solve the question  
 * create a new file
-* add the solution in this repository  
-
+* paste your code in the new file
+* Propose the changes
+* Click on "create Pull Request'
+* Done
