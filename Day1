@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main() {
+    int i,x[100],y[100],s[100],t;
+    printf("Enter the no of test cases: ");
+    scanf("%d",&t);
+    printf("Enter the test cases\n");
+    for(i=1;i<=t;i++) {
+        scanf("%d %d",&x[i],&y[i]);
+    }
+    for(i=1;i<=t;i++) {
+        if(x[i] == 0 || y[i] == 0) {
+            printf("");
+        } else {
+            s[i] = x[i] + y[i];
+            printf("%d\n",s[i]);
+        }
+    }
+}
