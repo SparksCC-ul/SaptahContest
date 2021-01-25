@@ -17,5 +17,4 @@ void main(){
 
 }
 
-/* Mohammed Raheel
-   raheelkhatttal@gmail.com*/
+/* Mohammed Raheel */
