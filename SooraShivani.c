@@ -3,7 +3,7 @@
 
 int main()
 {
-   int count, input[100],i,j;
+   int count, input[200],i,j;
    input[0] = 0;
    scanf("%d",&count);
    for(i=1;i<=(count*2);i++)
