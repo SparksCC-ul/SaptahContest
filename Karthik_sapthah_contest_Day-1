@@ -1,13 +1,19 @@
-Program to add 2 numbers
 #include <stdio.h>
 #include <stdlib.h>
 #include<conio.h>
 void main()
 {
-    int a,b,c;
-    printf("Enter the 2 numbers \n");
-    scanf("%d %d",&a,&b);
-    c=a+b;
-    printf("\n%d",c);
+    int a[100],b[100],c[100],n,i;
+    scanf("%d\n",&n);
+    for(i=0;i<n;i++)
+    {
+    scanf("%d %d",&a[i],&b[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+    c[i]=a[i]+b[i];
+    printf("\n%d",c[i]);
+    }
     getch();
 }
+
