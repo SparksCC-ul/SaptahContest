@@ -11,7 +11,7 @@ Number of chocolates Player 2 has
 Please follow the output format of the example program. Do not worry about the exact spacing when displaying the round number.
 
 ## Example program:
-Lets play Rock,Paper,Scissors!  
+Lets play Lady,Hunter, Tiger!  
 1.Hunter  
 2.Lady  
 3.Tiger  
