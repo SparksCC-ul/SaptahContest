@@ -3,7 +3,7 @@
 void main(){
     int player1, player2, result1=0, result2=0, i=0, p1=0, p2=0;
     while(i<5){
-            printf("Lets play Lady,Hunter, Tiger!\n1.Lady\n2.Hunter\n3.Tiger");
+            printf("\nLets play Lady,Hunter, Tiger!\n1.Lady\n2.Hunter\n3.Tiger");
             int j=0;
             while(j<3){
                 printf("\nplayer1: ");
@@ -29,6 +29,8 @@ void main(){
                 }else if(player1==3 && player2==2){
                     printf("\nPlayer 2 beats Player 1\nPlayer 2 gets 1 Point");
                     p2 = p2+1;
+                }else if(player1 == player2){
+                    printf("\nIt is a draw");
                 }
                 j++;
         }
@@ -36,7 +38,7 @@ void main(){
         if(p2 > p1){
             printf("\nPlayer 2 has won Round %d! He is awarded a chocolate!\n", i+1);
             result2 = result2 + 1;
-        } else {
+        } else if(p2 < p1) {
             printf("\nPlayer 1 has won Round %d! He is awarded a chocolate!\n", i+1);
             result1 = result1 + 1;
         }
