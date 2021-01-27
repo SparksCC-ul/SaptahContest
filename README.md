@@ -14,14 +14,17 @@ Steps to Solve the questions in Github
 * Click on "create Pull Request'
 * Done
 
-# Here are some powerful words spoken by great people in reference to our nation:
-
-“A nation’s culture resides in the hearts and in the soul of its people.” - Mahatma Gandhi 
-
-"Even if I died in the service of the nation, I would be proud of it. Every drop of my blood… will contribute to the growth of this nation and to make it strong and dynamic." – Indira Gandhi
-
-"If there is one place on the face of earth where all the dreams of living men have found a home from the very earliest days when man began the dream of existence, it is India." – Romain Rolland
-
-"I feel that the constitution is workable, it is flexible and it is strong enough to hold the country together both in peacetime and in wartime. Indeed, if I may say so, if things go wrong under the new Constitution, the reason will not be that we had a bad Constitution. What we will have to say is that Man was vile." – B.R. Ambedkar
-
-"At the dawn of history India started on her unending quest, and trackless centuries are filled with her striving and the grandeur of her success and her failures. Through good and ill fortune alike she [India] has never lost sight of that quest or forgotten the ideals which gave her strength." - Jawaharlal Nehru 
+# Today's Topic: Vectors in C++
+Vectors are same as dynamic arrays with the ability to resize itself automatically when an element is inserted or deleted, with their storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators. In vectors, data is inserted at the end. Inserting at the end takes differential time, as sometimes there may be a need of extending the array. Removing the last element takes only constant time because no resizing happens. Inserting and erasing at the beginning or in the middle is linear in time.  
+  
+Certain functions associated with the vector are:  
+### Iterators  
+  
+* begin() – Returns an iterator pointing to the first element in the vector
+* end() – Returns an iterator pointing to the theoretical element that follows the last element in the vector
+* rbegin() – Returns a reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+* rend() – Returns a reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
+* cbegin() – Returns a constant iterator pointing to the first element in the vector.
+* cend() – Returns a constant iterator pointing to the theoretical element that follows the last element in the vector.
+* crbegin() – Returns a constant reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+* crend() – Returns a constant reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
