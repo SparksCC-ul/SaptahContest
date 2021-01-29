@@ -37,7 +37,7 @@ Open brackets must be closed in the correct order.
 ### Input:
                 s = "{[]}"
 ### Output:
-                false
+                true
 
 # Constraints:
 
