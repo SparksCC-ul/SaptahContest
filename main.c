@@ -4,35 +4,43 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 void main(){
-    int arr[50] = {0},N,k,i,j = 0,temp = 0;
-    int maximum = 0,sum = 0;
-    printf("Enter N:>>");
-    scanf("%d",&N);
-    printf("Enter the elements:>>");
-    for (i = 0 ;i<N;i++){
-        scanf("%d",&arr[i]);
-    }
+    char strin[100];
+    char arr[20][20] = {0};
+    int n,i = 0,j = 0,k = 0;
+    bool down;
+    printf("please Enter the String:>> ");
+    scanf("%s",&strin);
+    printf("please Enter the number of rows:>>");
+    scanf("%d",&n);
 
-    printf("\nEnter k:>>");
-    scanf("%d", &k);
-
-    for (i = 0;i<(N/k)+k;i++){
-        j = i;
-        temp = 0;
-        while (temp < k){
-            sum = sum + arr[j];
-            printf("%d\n",sum);
+        while (strin[i] != '\0')
+    {
+        if (k == n-1){
+            down = false;
             j++;
-            temp ++;
+        }   
+        if (k == 0){
+            down = true;
+            j++;
         }
-        if (maximum < sum){
-            maximum = sum;
+        if (down == true){
+            arr[k][j] = strin[i];
+            k+=1;
         }
-        printf("\n%d\n",i);
-        sum = 0;
+        else{
+            arr[k][j] = strin[i];
+            k -=1;
+        }
+        i++;
     }
 
-    printf("Maximum contiguous sum is %d", maximum);
+    for (i = 0;i<n;i++){
+        for (j = 0;j<20;j++){
+            printf("%c",arr[i][j]);
+        }
+    }
+    
 }
